@@ -4,7 +4,9 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -22,11 +24,15 @@
         "react",
         "jsx-a11y",
         "import",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "rules": {
       "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
       "camelcase": "off",
-      "no-use-before-define": "off"
+      "no-use-before-define": "off",
+      "react/prop-types": "off",
+      "no-shadow": "off",
+      "prettier/prettier": "error"
     }
 }
